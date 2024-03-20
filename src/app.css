@@ -1,0 +1,30 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --program-color: #7525DA;
+  --team-color: #ffe921;
+  --partner-color: #19bc62;
+  --spenden-color: #ff8c00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
