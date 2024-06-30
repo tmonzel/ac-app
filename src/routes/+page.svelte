@@ -1,19 +1,15 @@
 <script lang="ts">
-  import 'material-symbols/outlined.css';
-  import "../app.css";
 	import Header from '$lib/Header.svelte';
 	import PageSection from '$lib/PageSection.svelte';
 	import PageScroller from '$lib/PageScroller.svelte';
 </script>
-
-
 
 <PageScroller>
   <Header />
   <section id="start" class="min-h-screen flex items-end bg-zinc-50 animated-bg">
     <div class="p-5 md:p-10 lg:p-20 flex items-end justify-between w-full">
       <div>
-        <h1 class="text-5xl md:text-7xl mb-14">Für<br>
+        <h1 class="text-5xl md:text-5xl mb-14">Für<br>
           <br>
           <span class="font-semibold">MEHR<br>
           <mark>ERFOLGREICHE</mark><br>
@@ -21,7 +17,7 @@
           IN HAMBURG</span>
         </h1>
         
-        <h2 class="text-2xl md:text-3xl">Individuelle Ausbildungsbegleitung<br> 
+        <h2 class="text-xl md:text-2xl">Individuelle Ausbildungsbegleitung<br> 
           für Azubis und Betriebe.</h2>
       </div>
 
@@ -33,15 +29,15 @@
     </div>
   </section>
 
-  <PageSection id="programm" class="py-64">
+  <PageSection id="programm" class="py-52">
     <div class="container mx-auto px-5">
-      <h1 class="text-8xl font-extrabold tracking-tighter mb-12 text-center" style="line-height: 0.85em;">Level<br>Up!</h1>
-      <p class="text-center text-3xl mb-10">Individuelle Ausbildungsbegleitung <br>
+      <h1 class="main-headline mb-12 text-center">Level<br>Up!</h1>
+      <p class="text-center text-2xl mb-10">Individuelle Ausbildungsbegleitung <br>
         für Azubis und Betriebe. </p>
-      <h2 class="text-center text-3xl mb-20 -rotate-6"><mark class="p-1">Gemeinsam schaffst du das!</mark></h2>
+      <h2 class="text-center text-2xl mb-20 -rotate-6"><mark class="p-1">Gemeinsam schaffst du das!</mark></h2>
 
       <div class="flex flex-col gap-10 xl:flex-row xl:gap-15">
-        <div class="basis-full lg:basis-1/2 border-t pt-8 border-zinc-500">
+        <div class="lg:basis-1/2 border-t pt-8 border-zinc-500">
           <h2 class="text-2xl mb-8 font-bold text-balance">Starke Ausbildungsbegleitung</h2>
           <p class="mb-5">Individuelle Unterstützung von Azubis, um Schieflagen schnell begegnen zu können, z.B. </p>
 
@@ -55,7 +51,7 @@
           <p>Knotenpunkt zwischen Betrieb, Azubi und Berufsschule</p>
         </div>
 
-        <div class="basis-full lg:basis-1/2 border-t pt-8 border-zinc-500">
+        <div class="lg:basis-1/2 border-t pt-8 border-zinc-500">
           <h2 class="text-2xl mb-8 font-bold">Rekrutierungsunterstützung</h2>
           <ul class="list-outside pl-7">
             <li>Wir unterstützen mit unserer Erfahrung bei der Auswahl potenzieller Azubis</li>
@@ -66,10 +62,10 @@
     </div>
   </PageSection>
 
-  <PageSection id="partner" class="py-64">
+  <PageSection id="partner" class="py-52">
     <div class="container mx-auto px-5">
-      <h1 class="text-8xl font-extrabold tracking-tighter mb-12 text-center" style="line-height: 0.85em;">Unsere<br>Partner</h1>
-      <p class="text-center text-3xl mb-12">Wir werden von vielen<br>
+      <h1 class="main-headline mb-12 text-center">Unsere<br>Partner</h1>
+      <p class="text-center text-2xl mb-12">Wir werden von vielen<br>
         Förderern und Betrieben unterstützt.</p>
       
       <div class="grid gap-5 sm:gap-10 sm:grid-cols-2 lg:grid-cols-3 partner-grid">
@@ -87,7 +83,7 @@
         </div>
       </div>
 
-      <hr class="my-20">
+      <!--<hr class="my-20">
 
       <div class="grid gap-5 sm:gap-10 sm:grid-cols-2 lg:grid-cols-3 partner-grid">
         <div class="bg-zinc-100">
@@ -108,30 +104,90 @@
         <div class="bg-zinc-100">
           <img src="partner/rl-logo.svg" alt="Rieß & Lauenstein Logo">
         </div>
-      </div>
+      </div>-->
     </div>
   </PageSection>
 
   <PageSection id="spenden" class="flex items-center justify-center">
     <div>
-      <h1 class="text-5xl font-bold tracking-tight">Unterstützen Sie uns</h1>
+      <h1 class="mb-12 text-center main-headline">Unterstützen<br>Sie uns</h1>
+      <p class="text-center text-2xl mb-12">Wir werden von vielen<br>
+        Förderern und Betrieben unterstützt.</p>
     </div>
   </PageSection>
 
-  <PageSection id="team" class="flex items-center justify-center">
+  <PageSection id="team" class="flex items-center justify-center py-52">
     <div>
-      <h1 class="text-5xl font-bold tracking-tight">Unser Team</h1>
+      <h1 class="mb-12 text-center main-headline">Unser<br>Team</h1>
+      <p class="text-center text-2xl mb-12">Klein aber fein.</p>
+
+      <div class="flex justify-between flex-col lg:flex-row gap-20">
+        <div class="sm:basis-1/2 text-center">
+          <div class="flex justify-center mb-10">
+            <div class="bg-zinc-200 w-64 h-64 rounded-full"></div>
+          </div>
+          <span class="font-medium">Melanie Steinhoff</span><br>
+          Azubi Companion | Geschäftsführung<br>
+          <br>
+          m.steinhoff@azubi-companion.de<br>
+          Mobil: 0111 22 57 44 91<br>
+        </div>
+        <div class="sm:basis-1/2 text-center">
+          <div class="flex justify-center mb-10">
+            <div class="bg-zinc-200 w-64 h-64 rounded-full"></div>
+          </div>
+          <span class="font-medium">Julia Wöhlke</span><br>
+          Azubi Companion | Geschäftsführung<br>
+          <br>
+          j.woehlke@azubi-companion.de<br>
+          Mobil: 0111 22 57 44 91<br>
+        </div>
+      </div>
     </div>
   </PageSection>
 
   <PageSection id="kontakt" class="flex items-center justify-center">
     <div>
-      <h1 class="text-5xl font-bold tracking-tight">Kontakt</h1>
+      <h1 class="mb-12 text-center main-headline">Kontakt</h1>
+      <!--<p class="text-center text-2xl mb-12">Hier kommen wir<br>
+        zusammen:</p>-->
+
+      <div class="grid gap-10 text-2xl text-center">
+        <div class="text-2xl mb-8">
+          Azubi Companion gGmbH<br> 
+          Teststraße 12<br>
+          22453 Hamburg
+        </div>
+        <div>
+          <span class="font-semibold">Tel:</span><br>
+          <span>+49 83 11223344</span><br><br>
+          <span class="font-semibold">E-Mail:</span><br> 
+          <a href="mailto:post@azubi-companion.de">post@azubi-companion.de</a>
+        </div>
+      </div>
+        
     </div>
   </PageSection>
 </PageScroller>
 
+<footer class="bg-zinc-100 text-xl text-zinc-600 p-16 sm:px-10">
+  <div class="flex justify-center mb-3">
+    <img src="favicon.svg" class="w-8 saturate-0 opacity-50" alt="Azubi Companion Logo" />
+  </div>
+  <div class="flex justify-center gap-5">
+    <a href="datenschutz" target="_blank">Datenschutz</a>
+    <a href="impressum" target="_blank">Impressum</a>
+  </div>
+</footer>
+
 <style>
+  .main-headline {
+    font-size: 4rem;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+    line-height: 0.85em;
+  }
+
   .partner-grid div {
     display: flex;
     align-items: center;
