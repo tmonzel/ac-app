@@ -11,8 +11,12 @@ const config = {
 			fallback: 'index.html' // may differ from host to host
 		}),
 
+		alias: {
+			$assets: 'src/assets'
+		},
+
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/azubi-companion-prototyp' : '' 
+			base: process.env.NODE_ENV === 'production' ? '' : '',
 		}
 	},
 

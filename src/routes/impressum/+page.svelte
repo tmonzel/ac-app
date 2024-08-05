@@ -1,43 +1,62 @@
+<script>
+	import Footer from '$lib/Footer.svelte';
+</script>
 
-<div class="container mx-auto">
-  <header class="text-center">
-    <h1 class="text-5xl font-bold tracking-tight my-10">Impressum</h1>
-  </header>
+<svelte:head>
+	<title>Impressum | Azubi Companion</title>
+	<meta name="description" content="Azubi Companion gGmbH, Budnikowsky-Twiete 7, 22041 Hamburg" />
+	<link rel="canonical" href="https://azubi-companion.de/impressum" />
+</svelte:head>
 
-  <hr class="my-10">
+<div class="container mx-auto my-10 px-2 sm:px-0">
+	<header class="text-center">
+		<h1 class="text-5xl font-bold tracking-tight hl-font">Impressum</h1>
+	</header>
 
-  <div class="px-2 sm:px-20">
-    <section class="mb-10">
-      <h2 class="font-semibold mb-5 copy-font text-2xl">Verantwortlicher für die Datenverarbeitung ist:</h2>
-      <p class="mb-10">
-        Azubi Companion gGmbH<br>
-        Kaiserstraße 79<br>
-        60329<br>
-        Hamburg<br>
-        post@azubi-companion.de
-      </p>
+	<hr class="my-10" />
 
-      <h2 class="font-semibold mb-5 copy-font text-2xl">Vertreten durch:</h2>
-      <p>
-        Geschäftsführende Gesellschafterin: Melanie Steinhoff<br>
-        Geschäftsführende Gesellschafterin: Julia Wöhlke
-      </p>
+	<div class="px-2 sm:px-20">
+		<section class="mb-10">
+			<h2 class="font-semibold mb-2">Verantwortlicher für die Datenverarbeitung ist:</h2>
+			<p class="mb-8">
+				Azubi Companion gGmbH<br />
+				Budnikowsky-Twiete 7<br />
+				22041 Hamburg<br />
+				post@azubi-companion.de
+			</p>
 
-      <h2 class="font-semibold mb-5 copy-font text-2xl">Registereintrag:</h2>
-      <p>
-        Eingetragen im Handelsregister<br>
-        Registergericht: Amtsgericht Hamburg<br>
-        Registernummer: XXXXX<br>
-        <br>
-        Umsatzsteuer-ID-Nummer nach §27a Umsatzsteuergesetz: XXXXXXX
-      </p>
-    </section>
+			<h2 class="font-semibold mb-2">Vertreten durch:</h2>
+			<p class="mb-8">
+				Geschäftsführende Gesellschafterin: Dr. Melanie Steinhoff<br />
+				Geschäftsführende Gesellschafterin: Julia Wöhlke
+			</p>
 
-    <hr class="my-10 w-10">
-  
-    <section>
-      <h2 class="font-semibold mb-5 text-2xl copy-font">1. Zugriffsdaten und Hosting</h2>
-      <p>Sie können unsere Webseiten besuchen, ohne Angaben zu Ihrer Person zu machen. Bei jedem Aufruf einer Webseite speichert der Webserver lediglich automatisch ein sogenanntes Server-Logfile, das z.B. den Namen der angeforderten Datei, Ihre IP-Adresse, Datum und Uhrzeit des Abrufs, übertragene Datenmenge und den anfragenden Provider (Zugriffsdaten) enthält und den Abruf dokumentiert.</p>
-    </section>
-  </div>
+			<h2 class="font-semibold mb-2">Registereintrag:</h2>
+			<p class="mb-8">
+				Eingetragen im Handelsregister<br />
+				Registergericht: Amtsgericht Hamburg<br />
+				Registernummer: HRB 187113<br />
+				Steuernummer: 17/421/00029
+			</p>
+
+			<h2 class="font-semibold mb-2">Design & Entwicklung:</h2>
+			<p>Thomas Monzel</p>
+		</section>
+
+		<hr class="my-10 w-10" />
+
+		<section>
+			<h2 class="font-semibold mb-2">Haftungsbeschränkung</h2>
+			<p>
+				Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der Anbieter
+				übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der
+				bereitgestellten Inhalte. Die Nutzung der Inhalte der Website erfolgt auf eigene Gefahr des
+				Nutzers. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und
+				nicht immer die Meinung des Anbieters wieder. Mit der reinen Nutzung der Website des
+				Anbieters kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande.
+			</p>
+		</section>
+	</div>
 </div>
+
+<Footer />

@@ -8,25 +8,25 @@
   --partner-color: #19bc62;
   --spenden-color: #ff8c00;
   --start-color: #2d2d2d;
+
+  --mark-color: rgba(255, 247, 0, 0.75);
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 1.1em;
 }
 
 body {
-  font-family: 'Mali', sans-serif;
-}
-
-h1, h2 {
   font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
 }
 
 .hl-font {
   font-family: 'Urbanist', sans-serif;
 }
 
-.copy-font {
+.lead-font {
   font-family: 'Mali', sans-serif;
 }
 
@@ -36,11 +36,12 @@ ul {
 
 @media (min-width: 640px) { 
   html {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 }
 
 .material-symbols-outlined {
+  font-family: 'Material Icons Outlined';
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -48,11 +49,25 @@ ul {
   'opsz' 24
 }
 
+
+.main-headline {
+  font-size: 3.5rem;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+  line-height: 0.85em;
+}
+
+@media (min-width: 640px) {
+  .main-headline {
+    font-size: 4rem;
+  }
+}
+
 .animated-bg {
   margin: auto;
   overflow: auto;
   background: linear-gradient(315deg, rgb(243, 80, 180) 3%, rgb(255, 215, 56) 40%, rgb(11, 223, 142) 80%);
-  animation: gradient 13s ease infinite;
+  background-position: 20% 20%;
   background-size: 400% 400%;
   background-attachment: fixed;
 }
@@ -118,12 +133,9 @@ ul {
 }
 
 dialog:modal {
+  margin: 0;
   min-width: 100vw;
   min-height: 100vh;
-}
-
-dialog {
-  
 }
 
 dialog[open] {
