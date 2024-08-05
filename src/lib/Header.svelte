@@ -42,7 +42,7 @@
 		</div>
 		<div class="xl:me-5">
 			<button class="flex xl:hidden mobile-menu-toggle" on:click={() => openMenu()}>
-				<span class="material-symbols-outlined"> menu </span>
+				<span class="material-symbols-outlined">menu</span>
 			</button>
 
 			<nav class="hidden xl:flex gap-8">
@@ -172,7 +172,8 @@
 	}
 
 	.mobile-menu-toggle span {
-		font-size: 4em;
+		font-size: 2.7em;
+		user-select: none;
 
 		font-variation-settings:
 			'FILL' 1,
@@ -236,7 +237,6 @@
 
 	.nav-link.active.mobile {
 		background-color: #eeeeee;
-		font-weight: 600;
 	}
 
 	.nav-link.active .icon {
