@@ -16,14 +16,14 @@
 	<title>Azubi Companion | Individuelle Ausbildungsbegleitung</title>
 	<meta
 		name="description"
-		content="Individuelle Ausbildungsbegleitung für Azubis und Ausbildungsbetriebe. Gemeinsam schaffst du das!"
+		content="Individuelle Ausbildungsbegleitung für Azubis und Ausbildungsbetriebe in Hamburg. Gemeinsam schaffst du das!"
 	/>
 
 	<meta property="og:title" content="Azubi Companion | Individuelle Ausbildungsbegleitung" />
 	<meta property="og:url" content="https://azubi-companion.de/" />
 	<meta
 		property="og:description"
-		content="Individuelle Ausbildungsbegleitung für Azubis und Ausbildungsbetriebe."
+		content="Individuelle Ausbildungsbegleitung für Azubis und Ausbildungsbetriebe in Hamburg."
 	/>
 	<meta property="og:image" content={logoImage} />
 	<meta property="og:type" content="website" />
