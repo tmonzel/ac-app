@@ -1,15 +1,52 @@
-<section id="start" class="min-h-screen flex items-end bg-teal-200">
+<script lang="ts">
+	let counter = 0;
+	const backgrounds = ['bg-teal-200', 'bg-teal-200'];
+
+	setInterval(() => {
+		counter += 1;
+	}, 5000);
+
+	$: slideIndex = counter % 3;
+	$: bgClass = backgrounds[slideIndex];
+</script>
+
+<section id="start" class="min-h-screen flex items-end transition-all duration-500 {bgClass}">
 	<div class="p-5 xl:p-10 flex items-end justify-between w-full">
 		<div>
 			<div class="text-4xl xl:text-5xl mb-5 hl-font">
-				Für<br />
-				<br />
-				<div class="font-semibold">
-					MEHR<br />
-					<span style="background-color: var(--mark-color)">ERFOLGREICHE</span>
-					<br />
-					AUSBILDUNGEN<br />
-					IN HAMBURG
+				<div class="relative font-semibold">
+					<div class="absolute bottom-0 text-slide" class:active={slideIndex === 0}>
+						<span class="font-normal">Für</span><br />
+						<br />
+						<span class="animated">MEHR</span><br />
+						<span class="animated" style="background-color: var(--mark-color)">ERFOLGREICHE</span>
+						<br />
+						<span class="animated"
+							>AUSBILDUNGEN<br />
+							IN HAMBURG</span
+						>
+					</div>
+
+					<div class="absolute bottom-0 text-slide" class:active={slideIndex === 1}>
+						<span class="font-normal">Für</span><br />
+						<br />
+						<span class="animated">EINE BESSERE</span><br />
+						<span class="animated" style="background-color: var(--mark-color)">ZUSAMMENARBEIT</span>
+						<br />
+						<span class="animated"
+							>MIT DEN<br />
+							BETRIEBEN</span
+						>
+					</div>
+
+					<div class="absolute bottom-0 text-slide" class:active={slideIndex === 2}>
+						<span class="font-normal">Für</span><br /><br />
+						<br />
+						<span class="animated">THE</span><br />
+						<span class="animated" style="background-color: var(--mark-color)">WORLD</span>
+						<br />
+						<span class="animated">FRIEDEN</span>
+					</div>
 				</div>
 			</div>
 
@@ -32,3 +69,44 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.text-slide {
+		transition: all 1s;
+	}
+
+	.text-slide .animated {
+		display: inline-block;
+		animation: 1s cubic-bezier(0.16, 1, 0.3, 1) fadeOut;
+		animation-fill-mode: forwards;
+	}
+
+	.text-slide.active .animated {
+		animation: 1s cubic-bezier(0.16, 1, 0.3, 1) fadeIn;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			transform: translateX(15px);
+			opacity: 0;
+		}
+
+		100% {
+			transform: translateX(0px);
+			opacity: 1;
+		}
+	}
+
+	@keyframes fadeOut {
+		0% {
+			transform: translateX(0px);
+			opacity: 1;
+		}
+
+		100% {
+			transform: translateX(-15px);
+			opacity: 0;
+		}
+	}
+</style>
