@@ -13,13 +13,16 @@
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: 1.1em;
 }
 
 body {
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
+}
+
+mark {
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity)) /* #fef08a */;
 }
 
 .hl-font {

@@ -60,7 +60,9 @@
 				</div>
 				<p class="text-center">
 					<span class="font-semibold">Hier könnte dein Name stehen.</span><br />
-					Voll-/Teilzeit Companion (m/w/d)<br />Bei Interesse, melde dich gerne per Mail.
+					Voll-/Teilzeit Companion (m/w/d)<br /><a href="/jobs" class="underline">
+						Hier geht's zur Stellenausschreibung</a
+					>
 				</p>
 			</div>
 		</div>

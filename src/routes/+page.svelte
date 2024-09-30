@@ -29,6 +29,12 @@
 	<meta property="og:type" content="website" />
 
 	<link rel="canonical" href="https://azubi-companion.de" />
+
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
 </svelte:head>
 
 <Header />
