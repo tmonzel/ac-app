@@ -32,7 +32,9 @@
 					></div>
 				</div>
 				<span itemprop="name" class="font-semibold">Julia Wöhlke</span><br />
-				Geschäftsführerin
+
+				Geschäftsführerin<br />
+				Mobil: +49 (0)176 61900760
 			</div>
 			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
 				<div class="flex justify-center mb-10">
