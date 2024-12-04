@@ -21,7 +21,7 @@
 					></div>
 				</div>
 				<span itemprop="name" class="font-semibold">Dr. Melanie Steinhoff</span><br />
-				Companion und Geschäftsführerin<br />
+				<span class="italic">Companion und Geschäftsführerin</span><br />
 				Mobil: +49 (0)178-5333416<br />
 			</div>
 			<div itemscope itemtype="https://schema.org/Person" class="text-center">
@@ -33,8 +33,8 @@
 				</div>
 				<span itemprop="name" class="font-semibold">Julia Wöhlke</span><br />
 
-				Geschäftsführerin<br />
-				Mobil: +49 (0)176 61900760
+				<span class="italic">Geschäftsführerin</span><br />
+				Mobil: +49 (0)176-61900760
 			</div>
 			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
 				<div class="flex justify-center mb-10">
@@ -44,7 +44,8 @@
 					></div>
 				</div>
 				<p class="text-center">
-					<span itemprop="name" class="font-semibold">Susanne Stiel</span><br />Companion<br />
+					<span itemprop="name" class="font-semibold">Susanne Stiel</span><br />
+					<span class="italic">Companion</span><br />
 					Mobil: +49 (0)176-61986823
 				</p>
 			</div>
@@ -61,8 +62,47 @@
 					</div>
 				</div>
 				<p class="text-center">
+					<span class="font-semibold">Simon Reeg</span><br />
+					<span class="italic">Companion und Koordinator für Ausbildungsnetzwerke</span><br />
+					Mobil: 49 (0)176-66667414
+				</p>
+			</div>
+			<div class="basis-1/3">
+				<div class="flex justify-center mb-10">
+					<div
+						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
+					>
+						<img
+							src={logoImage}
+							alt="Azubi Companion Logo"
+							class="absolute h-28 grayscale opacity-10 me-4"
+						/>
+					</div>
+				</div>
+				<p class="text-center">
+					<span class="font-semibold">Chris Hopp</span><br />
+					<span class="italic">Junior Companion und Projektassistentin</span><br />
+					Mobil: 49 (0)176-80410113
+				</p>
+			</div>
+			<div class="basis-1/3">
+				<div class="flex justify-center mb-10">
+					<div
+						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
+					>
+						<img
+							src={logoImage}
+							alt="Azubi Companion Logo"
+							class="absolute h-28 grayscale opacity-10 me-4"
+						/>
+					</div>
+				</div>
+				<p class="text-center">
 					<span class="font-semibold">Hier könnte dein Name stehen.</span><br />
-					Voll-/Teilzeit Companion (m/w/d)<br /><a href="/jobs" class="underline">
+					<span class="italic">Voll-/Teilzeit Companion (m/w/d)</span><br /><a
+						href="/jobs"
+						class="underline"
+					>
 						Hier geht's zur Stellenausschreibung</a
 					>
 				</p>
