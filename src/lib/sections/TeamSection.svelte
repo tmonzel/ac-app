@@ -3,7 +3,7 @@
 	import PageSection from '$lib/PageSection.svelte';
 	import melanieImage from '$assets/images/team/ac-steinhoff.webp';
 	import juliaImage from '$assets/images/team/ac-woehlke.webp';
-	import stielImage from '$assets/images/team/ac-stiel.webp';
+	import reegImage from '$assets/images/team/ac-reeg.jpg';
 	import hoppImage from '$assets/images/team/ac-hopp.jpg';
 </script>
 
@@ -22,7 +22,7 @@
 					></div>
 				</div>
 				<span itemprop="name" class="font-semibold">Dr. Melanie Steinhoff</span><br />
-				<span class="italic">Companion und Geschäftsführerin</span><br />
+				<span class="italic">Companion & Geschäftsführerin</span><br />
 				Mobil: +49 (0)178-5333416<br />
 			</div>
 			<div itemscope itemtype="https://schema.org/Person" class="text-center">
@@ -54,17 +54,12 @@
 				<div class="flex justify-center mb-10">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
-					>
-						<img
-							src={logoImage}
-							alt="Azubi Companion Logo"
-							class="absolute h-28 grayscale opacity-10 me-4"
-						/>
-					</div>
+						style="background-image: url({reegImage})"
+					></div>
 				</div>
 				<p class="text-center">
 					<span class="font-semibold">Simon Reeg</span><br />
-					<span class="italic">Companion und Koordinator für Ausbildungsnetzwerke</span><br />
+					<span class="italic">Companion & Koordinator für Ausbildungsnetzwerke</span><br />
 					Mobil: 49 (0)176-66667414
 				</p>
 			</div>
@@ -77,7 +72,7 @@
 				</div>
 				<p class="text-center">
 					<span class="font-semibold">Chris Hopp</span><br />
-					<span class="italic">Junior Companion und Projektassistentin</span><br />
+					<span class="italic">Junior Companion & Projektassistentin</span><br />
 					Mobil: 49 (0)176-80410113
 				</p>
 			</div>
