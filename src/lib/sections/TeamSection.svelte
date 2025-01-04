@@ -4,6 +4,7 @@
 	import melanieImage from '$assets/images/team/ac-steinhoff.webp';
 	import juliaImage from '$assets/images/team/ac-woehlke.webp';
 	import stielImage from '$assets/images/team/ac-stiel.webp';
+	import hoppImage from '$assets/images/team/ac-hopp.jpg';
 </script>
 
 <PageSection id="team" class="flex items-center justify-center py-32">
@@ -36,7 +37,7 @@
 				<span class="italic">Geschäftsführerin</span><br />
 				Mobil: +49 (0)176-61900760
 			</div>
-			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
+			<!-- <div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
 				<div class="flex justify-center mb-10">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left"
@@ -48,7 +49,7 @@
 					<span class="italic">Companion</span><br />
 					Mobil: +49 (0)176-61986823
 				</p>
-			</div>
+			</div> -->
 			<div class="basis-1/3">
 				<div class="flex justify-center mb-10">
 					<div
@@ -70,14 +71,9 @@
 			<div class="basis-1/3">
 				<div class="flex justify-center mb-10">
 					<div
-						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
-					>
-						<img
-							src={logoImage}
-							alt="Azubi Companion Logo"
-							class="absolute h-28 grayscale opacity-10 me-4"
-						/>
-					</div>
+						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left"
+						style="background-image: url({hoppImage})"
+					></div>
 				</div>
 				<p class="text-center">
 					<span class="font-semibold">Chris Hopp</span><br />
