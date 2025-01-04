@@ -89,6 +89,23 @@
 					</div>
 				</div>
 				<p class="text-center">
+					<span class="font-semibold">Thomas Monzel</span><br />
+					<span class="italic">Kommunikationsdesign & IT Support (Ehrenamt)</span>
+				</p>
+			</div>
+			<div class="basis-1/3">
+				<div class="flex justify-center mb-10">
+					<div
+						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
+					>
+						<img
+							src={logoImage}
+							alt="Azubi Companion Logo"
+							class="absolute h-28 grayscale opacity-10 me-4"
+						/>
+					</div>
+				</div>
+				<p class="text-center">
 					<span class="font-semibold">Hier könnte dein Name stehen.</span><br />
 					<span class="italic">Voll-/Teilzeit Companion (m/w/d)</span><br /><a
 						href="/jobs"
