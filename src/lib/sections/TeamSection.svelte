@@ -37,20 +37,7 @@
 				<span class="italic">Geschäftsführerin</span><br />
 				Mobil: +49 (0)176-61900760
 			</div>
-			<!-- <div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
-				<div class="flex justify-center mb-10">
-					<div
-						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left"
-						style="background-image: url({stielImage}); background-position: 20%"
-					></div>
-				</div>
-				<p class="text-center">
-					<span itemprop="name" class="font-semibold">Susanne Stiel</span><br />
-					<span class="italic">Companion</span><br />
-					Mobil: +49 (0)176-61986823
-				</p>
-			</div> -->
-			<div class="basis-1/3">
+			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
 				<div class="flex justify-center mb-10">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
@@ -63,7 +50,7 @@
 					Mobil: 49 (0)176-66667414
 				</p>
 			</div>
-			<div class="basis-1/3">
+			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
 				<div class="flex justify-center mb-10">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left"
@@ -76,7 +63,7 @@
 					Mobil: 49 (0)176-80410113
 				</p>
 			</div>
-			<div class="basis-1/3">
+			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
 				<div class="flex justify-center mb-10">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
@@ -93,7 +80,7 @@
 					<span class="italic">Kommunikationsdesign & IT Support (Ehrenamt)</span>
 				</p>
 			</div>
-			<div class="basis-1/3">
+			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
 				<div class="flex justify-center mb-10">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
