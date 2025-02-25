@@ -39,9 +39,6 @@
 			<div class="bg-zinc-100">
 				<img class="partner-logo p-3" src={mkkLogo} alt="mkk meine krankenkasse Logo" />
 			</div>
-			<div class="bg-zinc-100">
-				<img class="partner-logo" src={bhLogo} alt="Budnianer Hilfe Logo" />
-			</div>
 
 			<div class="bg-zinc-100">
 				<img class="partner-logo" src={hkAltonaLogo} alt="HK Hamburg Altona Logo" />
