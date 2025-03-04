@@ -8,6 +8,7 @@ frontend:
         - 'npm i'
     build:
       commands:
+        - 'nvm use 18.20.7'
         - 'npm run build'
         - 'cd build/compute/default/'
         - 'npm i --omit=dev'
