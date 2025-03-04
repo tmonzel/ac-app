@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - 'npm ci --production --cache .npm --prefer-offline'
+        - 'npm ci --prefer-offline'
     build:
       commands:
         - 'npm run build'
