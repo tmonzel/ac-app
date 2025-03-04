@@ -3,10 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
-        - 'npm ci --prefer-offline'
+        - 'npm i'
     build:
       commands:
         - 'npm run build'
+        - 'cd build/compute/default/'
+        - 'npm i --omit=dev'
   artifacts:
     baseDirectory: build
     files:
