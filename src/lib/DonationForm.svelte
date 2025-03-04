@@ -1,14 +1,18 @@
 <script lang="ts">
+	import { preventDefault } from 'svelte/legacy';
+
 	import type { Stripe, StripeElementsOptions } from '@stripe/stripe-js';
-	import { createEventDispatcher, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 
-	export let stripe: Stripe;
+	interface Props {
+		stripe: Stripe;
+	}
 
-	const dispatch = createEventDispatcher();
+	let { stripe }: Props = $props();
 
 	let payment: HTMLElement;
 	let errorMessage: string;
-	let loading = false;
+	let loading = $state(false);
 
 	const options: StripeElementsOptions = {
 		mode: 'payment',
@@ -65,7 +69,7 @@
 		}
 
 		loading = false;
-		dispatch('success');
+		//dispatch('success');
 	}
 
 	onMount(() => {
@@ -76,7 +80,7 @@
 	});
 </script>
 
-<form on:submit|preventDefault={submit} class="text-center">
+<form onsubmit={preventDefault(submit)} class="text-center">
 	<div bind:this={payment} class="mb-4"></div>
 	{#if errorMessage}
 		<div>{errorMessage}</div>

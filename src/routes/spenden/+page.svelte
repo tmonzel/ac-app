@@ -6,9 +6,13 @@
 	import type { Stripe } from '@stripe/stripe-js';
 	import DonationItem from '$lib/DonationItem.svelte';
 
-	export let data;
+	interface Props {
+		data: any;
+	}
 
-	let stripe: Stripe | null = null;
+	let { data }: Props = $props();
+
+	let stripe: Stripe | null = $state(null);
 
 	onMount(async () => {
 		stripe = await loadStripe(

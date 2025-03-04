@@ -3,7 +3,7 @@
 	import { logoImage } from '$assets/images';
 
 	let mobileMenu: HTMLDialogElement;
-	let menuOpen = false;
+	let menuOpen = $state(false);
 
 	function openMenu(): void {
 		mobileMenu.showModal();
@@ -15,7 +15,7 @@
 		menuOpen = false;
 	}
 
-	$: scrollMode = $appState.scrollTop > 150;
+	let scrollMode = $derived($appState.scrollTop > 150);
 </script>
 
 <svelte:head>
@@ -41,7 +41,7 @@
 			</a>
 		</div>
 		<div class="xl:me-5">
-			<button class="flex xl:hidden mobile-menu-toggle" on:click={() => openMenu()}>
+			<button class="flex xl:hidden mobile-menu-toggle" onclick={() => openMenu()}>
 				<span class="material-symbols-outlined">menu</span>
 			</button>
 
@@ -100,12 +100,12 @@
 	<div class="flex flex-col h-screen py-4 px-5">
 		<div class="flex justify-between mb-5 pb-5 border-b border-neutral-200">
 			<div>
-				<a href="#start" class="flex items-end text-lg" on:click={() => closeMenu()}>
+				<a href="#start" class="flex items-end text-lg" onclick={() => closeMenu()}>
 					<img src={logoImage} alt="Azubi Companion Logo" class="h-16" />
 					<span class="hl-font leading-5 ms-4 brand-text">AZUBI<br />COMPANION</span>
 				</a>
 			</div>
-			<button class="mobile-menu-toggle" on:click={() => closeMenu()}>
+			<button class="mobile-menu-toggle" onclick={() => closeMenu()}>
 				<span class="material-symbols-outlined"> close </span>
 			</button>
 		</div>
@@ -116,7 +116,7 @@
 				class="nav-link mobile rounded-md"
 				class:active={$appState.currentPage === 'programm'}
 				style="--highlight-color: #7433FF"
-				on:click={() => closeMenu()}
+				onclick={() => closeMenu()}
 			>
 				<span class="material-symbols-outlined icon"> rocket_launch </span>
 				LevelUp!
@@ -126,7 +126,7 @@
 				class="nav-link mobile rounded-md"
 				class:active={$appState.currentPage === 'partner'}
 				style="--highlight-color: #0d65f2"
-				on:click={() => closeMenu()}
+				onclick={() => closeMenu()}
 			>
 				<span class="material-symbols-outlined icon"> handshake </span>
 				Partner
@@ -136,7 +136,7 @@
 				class="nav-link mobile rounded-md"
 				class:active={$appState.currentPage === 'spenden'}
 				style="--highlight-color: #FF007A"
-				on:click={() => closeMenu()}
+				onclick={() => closeMenu()}
 			>
 				<span class="material-symbols-outlined icon"> favorite </span>
 				Unterstützen
@@ -146,7 +146,7 @@
 				class="nav-link mobile rounded-md"
 				class:active={$appState.currentPage === 'team'}
 				style="--highlight-color: #FFD600"
-				on:click={() => closeMenu()}
+				onclick={() => closeMenu()}
 			>
 				<span class="material-symbols-outlined icon"> group </span>
 				Team
@@ -156,7 +156,7 @@
 				class="nav-link mobile rounded-md"
 				class:active={$appState.currentPage === 'kontakt'}
 				style="--highlight-color: #333"
-				on:click={() => closeMenu()}
+				onclick={() => closeMenu()}
 			>
 				<span class="material-symbols-outlined icon"> mail </span>
 				Kontakt

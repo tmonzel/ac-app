@@ -3,8 +3,12 @@
 	import type { Stripe } from '@stripe/stripe-js';
 	import DonationForm from './DonationForm.svelte';
 
-	export let stripe: Stripe;
-	export let product: StripeBase.Product & { default_price: StripeBase.Price };
+	interface Props {
+		stripe: Stripe;
+		product: StripeBase.Product & { default_price: StripeBase.Price };
+	}
+
+	let { stripe, product }: Props = $props();
 
 	let donationDialog: HTMLDialogElement;
 
@@ -36,7 +40,7 @@
 		<input type="hidden" name="priceId" value={product.default_price.id} />
 	{/if}
 	<button
-		on:click={() => openDonationDialog()}
+		onclick={() => openDonationDialog()}
 		class="inline-flex shadow-lg items-center gap-2 justify-center w-full px-8 py-4 text-lg font-bold leading-6 text-white bg-indigo-600 border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
 		>Spenden <svg
 			class="w-5 h-5"
@@ -55,10 +59,10 @@
 </article>
 
 <dialog bind:this={donationDialog}>
-	<button class="absolute w-screen h-screen" on:click={() => donationDialog.close()}></button>
+	<button class="absolute w-screen h-screen" onclick={() => donationDialog.close()}></button>
 	<div class="relative bg-white p-5 rounded-2xl max-w-2xl mx-auto mt-12">
 		<div class="flex justify-end mb-3">
-			<button on:click={() => donationDialog.close()}
+			<button onclick={() => donationDialog.close()}
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					height="24px"
