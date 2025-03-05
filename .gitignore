@@ -15,3 +15,8 @@ vite.config.ts.timestamp-*
 # Docs: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-reference.html
 
 **/.aws-sam
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
