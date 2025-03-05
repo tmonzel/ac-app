@@ -1,0 +1,15 @@
+{
+  "margarette": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-acapp-margarette-2b9f6-authRole",
+      "UnauthRoleArn": "arn:aws:iam::354918380783:role/amplify-acapp-margarette-2b9f6-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::354918380783:role/amplify-acapp-margarette-2b9f6-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-acapp-margarette-2b9f6-deployment",
+      "UnauthRoleName": "amplify-acapp-margarette-2b9f6-unauthRole",
+      "StackName": "amplify-acapp-margarette-2b9f6",
+      "StackId": "arn:aws:cloudformation:eu-central-1:354918380783:stack/amplify-acapp-margarette-2b9f6/3869dc60-f9ea-11ef-88f9-0a74a873d36d",
+      "AmplifyAppId": "d1pdc7klc6yjkn"
+    }
+  }
+}
