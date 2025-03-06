@@ -10,7 +10,8 @@ const config = {
 		adapter: adapter(),
 
 		alias: {
-			$assets: 'src/assets'
+			$assets: 'src/assets',
+			$amplify: './amplify'
 		},
 
 		paths: {

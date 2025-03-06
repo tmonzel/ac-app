@@ -6,10 +6,14 @@ const schema = a.schema({
 			content: a.string(),
 			isDone: a.boolean()
 		})
-		.authorization((allow) => [allow.guest()])
+		.authorization((allow) => [allow.publicApiKey()])
 });
 
 export type Schema = ClientSchema<typeof schema>;
 export const data = defineData({
-	schema
+	schema,
+	authorizationModes: {
+		defaultAuthorizationMode: 'apiKey',
+		apiKeyAuthorizationMode: { expiresInDays: 30 }
+	}
 });
