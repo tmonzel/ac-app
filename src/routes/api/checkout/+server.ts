@@ -1,6 +1,7 @@
 import { stripe } from '$lib/server/stripe';
 import { redirect, type RequestHandler } from '@sveltejs/kit';
-import { APP_URL } from '$env/static/private';
+
+const APP_URL = 'https://feature-donations.d1pdc7klc6yjkn.amplifyapp.com';
 
 export const POST: RequestHandler = async ({ request }) => {
 	const data = await request.formData();
