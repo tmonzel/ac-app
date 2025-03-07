@@ -18,6 +18,13 @@
 	let scrollMode = $derived($appState.scrollTop > 150);
 </script>
 
+{#snippet navItem(name: string, label: string, icon: string)}
+	<a href="#{name}" class="flex gap-3 text-2xl" class:active={$appState.currentPage === name}>
+		<span class="material-symbols-outlined icon"> {icon} </span>
+		{label}
+	</a>
+{/snippet}
+
 <svelte:head>
 	{#if menuOpen}
 		<style>
@@ -30,14 +37,13 @@
 
 <header>
 	<div
-		class="fixed top-0 w-screen bg-white flex justify-between items-center shadow-lg site-header py-4 px-5 z-50"
-		style="--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.05)"
+		class="fixed top-0 w-screen flex justify-between items-center site-header py-5 px-7 z-50"
 		class:is-scrolling={scrollMode}
 	>
 		<div>
-			<a href="#start" class="flex items-end text-lg">
-				<img src={logoImage} alt="Azubi Companion Logo" class="h-16" />
-				<span class="hl-font leading-5 ms-4 brand-text">AZUBI<br />COMPANION</span>
+			<a href="#start" class="flex items-end">
+				<img src={logoImage} alt="Azubi Companion Logo" class="h-24" />
+				<span class="hl-font leading-6 ms-4 brand-text text-2xl">AZUBI<br />COMPANION</span>
 			</a>
 		</div>
 		<div class="xl:me-5">
@@ -45,52 +51,12 @@
 				<span class="material-symbols-outlined">menu</span>
 			</button>
 
-			<nav class="hidden xl:flex gap-8">
-				<a
-					href="#programm"
-					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'programm'}
-					style="--highlight-color: #7433FF"
-				>
-					<span class="material-symbols-outlined icon"> rocket_launch </span>
-					LevelUp!
-				</a>
-				<a
-					href="#partner"
-					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'partner'}
-					style="--highlight-color: #0d65f2"
-				>
-					<span class="material-symbols-outlined icon"> handshake </span>
-					Partner
-				</a>
-				<a
-					href="#spenden"
-					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'spenden'}
-					style="--highlight-color: #FF007A"
-				>
-					<span class="material-symbols-outlined icon"> favorite </span>
-					Unterstützen
-				</a>
-				<a
-					href="#team"
-					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'team'}
-					style="--highlight-color: #FFD600"
-				>
-					<span class="material-symbols-outlined icon"> group </span>
-					Team
-				</a>
-				<a
-					href="#kontakt"
-					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'kontakt'}
-					style="--highlight-color: #333"
-				>
-					<span class="material-symbols-outlined icon"> mail </span>
-					Kontakt
-				</a>
+			<nav class="hidden xl:flex flex-col gap-8">
+				{@render navItem('programm', 'Level Up!', 'rocket_launch')}
+				{@render navItem('partner', 'Partner', 'handshake')}
+				{@render navItem('spenden', 'Unterstützen', 'favorite')}
+				{@render navItem('team', 'Team', 'group')}
+				{@render navItem('kontakt', 'Kontakt', 'mail')}
 			</nav>
 		</div>
 	</div>
@@ -166,11 +132,6 @@
 </dialog>
 
 <style>
-	.site-header {
-		transition: all 0.1s ease-out;
-		/* padding: 2.5em 4em; */
-	}
-
 	.mobile-menu-toggle span {
 		font-size: 2.7em;
 		user-select: none;
@@ -180,25 +141,6 @@
 			'wght' 200,
 			'GRAD' 0,
 			'opsz' 24;
-	}
-
-	.nav-link {
-		font-family: 'Urbanist', sans-serif;
-		font-size: 1rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		font-weight: 500;
-		transition: transform 0.1s cubic-bezier(0.22, 1, 0.36, 1);
-		opacity: 0.75;
-	}
-
-	.nav-link.mobile {
-		flex-direction: row;
-		align-items: center;
-		font-size: 1.4rem;
-		padding: 1em;
-		line-height: 1;
 	}
 
 	.nav-link .icon {

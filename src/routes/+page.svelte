@@ -1,15 +1,15 @@
 <script lang="ts">
-	import Header from '$lib/Header.svelte';
+	import SiteMenu from '$lib/SiteMenu.svelte';
 	import PageScroller from '$lib/PageScroller.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import PartnerSection from '$lib/sections/PartnerSection.svelte';
-	import TeamSection from '$lib/sections/TeamSection.svelte';
-
 	import { logoImage } from '$assets/images';
+
 	import LandingSection from '$lib/sections/LandingSection.svelte';
 	import ServiceSection from '$lib/sections/ServiceSection.svelte';
 	import SupportSection from '$lib/sections/SupportSection.svelte';
 	import ContactSection from '$lib/sections/ContactSection.svelte';
+	import PartnerSection from '$lib/sections/PartnerSection.svelte';
+	import TeamSection from '$lib/sections/TeamSection.svelte';
 </script>
 
 <svelte:head>
@@ -37,7 +37,13 @@
 	</style>
 </svelte:head>
 
-<Header />
+<header class="fixed w-full px-12 py-10 flex justify-between">
+	<div class="flex justify-center">
+		<img class="h-24" src="/logo.svg" alt="" />
+	</div>
+
+	<SiteMenu />
+</header>
 
 <PageScroller>
 	<LandingSection />

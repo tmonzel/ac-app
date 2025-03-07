@@ -6,12 +6,7 @@
 	import type { Stripe } from '@stripe/stripe-js';
 	import DonationItem from '$lib/DonationItem.svelte';
 
-	interface Props {
-		data: any;
-	}
-
-	let { data }: Props = $props();
-
+	let { data } = $props();
 	let stripe: Stripe | null = $state(null);
 
 	onMount(async () => {
@@ -24,7 +19,6 @@
 <svelte:head>
 	<title>Spenden | Azubi Companion</title>
 	<meta name="description" content="Unterstützen Sie junge Menschen bei ihrer Ausbildung" />
-	<link rel="canonical" href="https://azubi-companion.de/jobs" />
 </svelte:head>
 
 <div class="container mx-auto my-10 px-2 sm:px-0">
@@ -32,10 +26,10 @@
 		<div class="flex justify-center mb-5">
 			<img src={logoImage} alt="Azubi Companion Logo" class="h-20" />
 		</div>
-		<h1 class="text-6xl font-bold mb-12 hl-font tracking-tight">
+		<h1 class="text-7xl font-bold mb-12 hl-font tracking-tight">
 			Bauen Sie unser<br />neues Büro mit auf
 		</h1>
-		<h2 class="text-xl mb-12 lead-font">
+		<h2 class="text-3xl mb-12">
 			Wählen Sie einen Gegenstand den Sie für das neue Büro beisteuern möchen...
 		</h2>
 	</header>
@@ -45,8 +39,8 @@
 	{#if stripe}
 		<div class="px-2 sm:px-20">
 			<div class="flex justify-center">
-				{#each data.products as product}
-					<DonationItem {stripe} {product} />
+				{#each data.items as item}
+					<DonationItem {stripe} {item} />
 				{/each}
 			</div>
 		</div>

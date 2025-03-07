@@ -6,11 +6,11 @@
 <PageSection id="programm" class="py-32">
 	<div class="container mx-auto px-5">
 		<header class="text-center">
-			<span class="material-symbols-outlined text-6xl">rocket_launch</span>
-			<h1 class="main-headline mb-12 hl-font">
+			<span class="material-symbols-outlined text-8xl">rocket_launch</span>
+			<h1 class="text-8xl font-extrabold tracking-tighter leading-20 mb-12 hl-font">
 				Level<br />Up!
 			</h1>
-			<h2 class="text-xl mb-16 lead-font">
+			<h2 class="text-4xl mb-16">
 				Individuelle Ausbildungsbegleitung <br />
 				für Azubis und Ausbildungsbetriebe.
 			</h2>
@@ -23,7 +23,7 @@
 					<h3 class="text-3xl font-bold text-rose-500">Azubis</h3>
 				</div>
 			</div>
-			<div class="lg:basis-3/4 xl:pt-8 border-neutral-300 xl:border-t">
+			<div class="lg:basis-3/4 xl:pt-8 border-neutral-300 xl:border-t text-2xl leading-9">
 				<div class="mb-7">
 					<h4 class="font-bold mb-2">Wir starten mit dir in deine Ausbildung</h4>
 

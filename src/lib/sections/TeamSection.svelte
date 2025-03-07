@@ -10,10 +10,10 @@
 <PageSection id="team" class="flex items-center justify-center py-32">
 	<div class="container">
 		<header class="text-center">
-			<h1 class="mb-12 main-headline hl-font">Team</h1>
+			<h1 class="text-8xl font-extrabold tracking-tighter mb-12 hl-font">Team</h1>
 		</header>
 
-		<div class="flex justify-center flex-col lg:flex-row gap-20 flex-wrap text-lg">
+		<div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-20 text-xl">
 			<div itemscope itemtype="https://schema.org/Person" class="text-center">
 				<div class="flex justify-center mb-10">
 					<div
