@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { logoImage } from '$assets/images';
-	import Footer from '$lib/Footer.svelte';
 </script>
 
 <svelte:head>

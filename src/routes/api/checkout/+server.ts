@@ -1,7 +1,6 @@
 import { stripe } from '$lib/server/stripe';
 import { redirect, type RequestHandler } from '@sveltejs/kit';
-
-const DOMAIN = 'http://localhost:5173';
+import { APP_URL } from '$env/static/private';
 
 export const POST: RequestHandler = async ({ request }) => {
 	const data = await request.formData();
@@ -14,8 +13,8 @@ export const POST: RequestHandler = async ({ request }) => {
 			}
 		],
 		mode: 'payment',
-		success_url: `${DOMAIN}/spenden/danke`,
-		cancel_url: `${DOMAIN}/spenden`
+		success_url: `${APP_URL}/spenden/danke`,
+		cancel_url: `${APP_URL}/spenden`
 	});
 
 	return redirect(303, session.url!);
