@@ -1,38 +1,43 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { appState } from './state';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
 
-  let scrollContainer: HTMLElement;
-  let sections: NodeListOf<HTMLElement>;
-  let focusedSection: HTMLElement;
+	let { children }: Props = $props();
 
-  function onScroll(e: Event) {
-    const scrollTop = window.scrollY;
+	let scrollContainer: HTMLElement;
+	let sections: NodeListOf<HTMLElement>;
+	let focusedSection: HTMLElement;
 
-    let currentPage = null;
+	function onScroll(e: Event) {
+		const scrollTop = window.scrollY;
 
-    if(sections) {
-      for(const s of sections) {
-        if(s === focusedSection) continue;
+		let currentPage = null;
 
-        const offsetTop = s.offsetTop - window.innerHeight / 2;
+		if (sections) {
+			for (const s of sections) {
+				if (s === focusedSection) continue;
 
-        if(offsetTop < scrollTop && (offsetTop + s.offsetHeight) > scrollTop) {
-          currentPage = s.id;
-        }
-      }
-    }
-    
-    appState.set({ scrollTop, currentPage });
-  }
+				const offsetTop = s.offsetTop - window.innerHeight / 2;
 
-  onMount(() => {
-    sections = scrollContainer.querySelectorAll('.page-section');
-  });
+				if (offsetTop < scrollTop && offsetTop + s.offsetHeight > scrollTop) {
+					currentPage = s.id;
+				}
+			}
+		}
+
+		appState.set({ scrollTop, currentPage });
+	}
+
+	onMount(() => {
+		sections = scrollContainer.querySelectorAll('.page-section');
+	});
 </script>
 
-<svelte:window on:scroll={onScroll}></svelte:window>
+<svelte:window onscroll={onScroll} />
 
 <div bind:this={scrollContainer}>
-  <slot></slot>
+	{@render children?.()}
 </div>

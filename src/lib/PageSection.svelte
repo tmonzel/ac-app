@@ -1,11 +1,17 @@
 <script lang="ts">
 	import { appState } from './state';
 
-  export let id: string;
+	interface Props {
+		id: string;
+		children?: import('svelte').Snippet<[any]>;
+		[key: string]: any;
+	}
 
-  $: active = $appState.currentPage === id;
+	let { ...props }: Props = $props();
+
+	let active = $derived($appState.currentPage === props.id);
 </script>
 
-<section {id} class={`${$$props.class || ''} min-h-screen page-section`} class:active={active}>
-  <slot {active}></slot>
+<section id={props.id} class={`${props.class || ''} min-h-screen page-section`} class:active>
+	{@render props.children?.({ active })}
 </section>
