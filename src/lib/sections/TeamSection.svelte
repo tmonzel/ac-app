@@ -1,98 +1,98 @@
 <script lang="ts">
-	import { logoImage } from '$assets/images';
 	import PageSection from '$lib/PageSection.svelte';
-	import melanieImage from '$assets/images/team/ac-steinhoff.webp';
-	import juliaImage from '$assets/images/team/ac-woehlke.webp';
-	import reegImage from '$assets/images/team/ac-reeg.jpg';
-	import hoppImage from '$assets/images/team/ac-hopp.jpg';
 </script>
 
 <PageSection id="team" class="flex items-center justify-center py-32">
-	<div class="container">
+	<div class="container max-w-5xl">
 		<header class="text-center">
-			<h1 class="mb-12 main-headline hl-font">Team</h1>
+			<h1 class="text-5xl sm:text-6xl xl:text-8xl font-extrabold tracking-tighter mb-5 xl:mb-13">
+				Team
+			</h1>
 		</header>
 
-		<div class="flex justify-center flex-col lg:flex-row gap-20 flex-wrap text-lg">
-			<div itemscope itemtype="https://schema.org/Person" class="text-center">
-				<div class="flex justify-center mb-10">
+		<div class="flex justify-center flex-col lg:flex-row flex-wrap text-center gap-y-20 text-xl">
+			<article itemscope itemtype="https://schema.org/Person" class="basis-1/2">
+				<div class="flex justify-center mb-7">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-center"
-						style="background-image: url({melanieImage})"
+						style="background-image: url(images/team/ac-steinhoff.webp)"
 					></div>
 				</div>
-				<span itemprop="name" class="font-semibold">Dr. Melanie Steinhoff</span><br />
-				<span class="italic">Companion & Geschäftsführerin</span><br />
-				Mobil: +49 (0)178-5333416<br />
-			</div>
-			<div itemscope itemtype="https://schema.org/Person" class="text-center">
-				<div class="flex justify-center mb-10">
+				<p>
+					<span itemprop="name" class="font-semibold">Dr. Melanie Steinhoff</span><br />
+					<span class="italic">Companion & Geschäftsführerin</span><br />
+					Mobil: +49 (0)178-5333416<br />
+				</p>
+			</article>
+			<article itemscope itemtype="https://schema.org/Person" class="basis-1/2">
+				<div class="flex justify-center mb-7">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left"
-						style="background-image: url({juliaImage})"
+						style="background-image: url(images/team/ac-woehlke.webp)"
 					></div>
 				</div>
-				<span itemprop="name" class="font-semibold">Julia Wöhlke</span><br />
-
-				<span class="italic">Geschäftsführerin</span><br />
-				Mobil: +49 (0)176-61900760
-			</div>
-			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
-				<div class="flex justify-center mb-10">
+				<p>
+					<span itemprop="name" class="font-semibold">Julia Wöhlke</span><br />
+					<span class="italic">Geschäftsführerin</span><br />
+					Mobil: +49 (0)176-61900760
+				</p>
+			</article>
+			<article itemscope itemtype="https://schema.org/Person" class="basis-1/2">
+				<div class="flex justify-center mb-7">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
-						style="background-image: url({reegImage})"
+						style="background-image: url(images/team/ac-reeg.jpg)"
 					></div>
 				</div>
-				<p class="text-center">
-					<span class="font-semibold">Simon Reeg</span><br />
+				<p>
+					<span itemprop="name" class="font-semibold">Simon Reeg</span><br />
 					<span class="italic">Companion & Koordinator für Ausbildungsnetzwerke</span><br />
 					Mobil: 49 (0)176-66667414
 				</p>
-			</div>
-			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
-				<div class="flex justify-center mb-10">
+			</article>
+			<article itemscope itemtype="https://schema.org/Person" class="basis-1/2">
+				<div class="flex justify-center mb-7">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left"
-						style="background-image: url({hoppImage})"
+						style="background-image: url(images/team/ac-hopp.jpg)"
 					></div>
 				</div>
-				<p class="text-center">
-					<span class="font-semibold">Chris Hopp</span><br />
+				<p>
+					<span itemprop="name" class="font-semibold">Chris Hopp</span><br />
 					<span class="italic">Junior Companion & Projektassistentin</span><br />
 					Mobil: 49 (0)176-80410113
 				</p>
-			</div>
-			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
-				<div class="flex justify-center mb-10">
+			</article>
+			<article itemscope itemtype="https://schema.org/Person" class="basis-1/2">
+				<div class="flex justify-center mb-7">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
 					>
 						<img
-							src={logoImage}
+							src="images/ac-girl.svg"
 							alt="Azubi Companion Logo"
 							class="absolute h-28 grayscale opacity-10 me-4"
 						/>
 					</div>
 				</div>
-				<p class="text-center">
-					<span class="font-semibold">Thomas Monzel</span><br />
+				<p>
+					<span itemprop="name" class="font-semibold">Thomas Monzel</span><br />
 					<span class="italic">Kommunikationsdesign & IT Support (Ehrenamt)</span>
 				</p>
-			</div>
-			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
-				<div class="flex justify-center mb-10">
+			</article>
+			<article itemscope itemtype="https://schema.org/Person" class="basis-1/2">
+				<div class="flex justify-center mb-7">
 					<div
 						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
 					>
 						<img
-							src={logoImage}
+							src="images/ac-girl.svg"
 							alt="Azubi Companion Logo"
 							class="absolute h-28 grayscale opacity-10 me-4"
 						/>
 					</div>
 				</div>
-				<p class="text-center">
+				<p>
 					<span class="font-semibold">Hier könnte dein Name stehen.</span><br />
 					<span class="italic">Voll-/Teilzeit Companion (m/w/d)</span><br /><a
 						href="/jobs"
@@ -101,7 +101,7 @@
 						Hier geht's zur Stellenausschreibung</a
 					>
 				</p>
-			</div>
+			</article>
 		</div>
 	</div>
 </PageSection>

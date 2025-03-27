@@ -5,7 +5,6 @@
 	import PartnerSection from '$lib/sections/PartnerSection.svelte';
 	import TeamSection from '$lib/sections/TeamSection.svelte';
 
-	import { logoImage } from '$assets/images';
 	import LandingSection from '$lib/sections/LandingSection.svelte';
 	import ServiceSection from '$lib/sections/ServiceSection.svelte';
 	import SupportSection from '$lib/sections/SupportSection.svelte';
@@ -25,7 +24,7 @@
 		property="og:description"
 		content="Individuelle Ausbildungsbegleitung für Azubis und Ausbildungsbetriebe in Hamburg."
 	/>
-	<meta property="og:image" content={logoImage} />
+	<meta property="og:image" content="images/ac-logo.svg" />
 	<meta property="og:type" content="website" />
 
 	<link rel="canonical" href="https://azubi-companion.de" />

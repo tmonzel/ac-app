@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { appState } from './state.svelte';
-	import { logoImage } from '$assets/images';
 
 	let mobileMenu: HTMLDialogElement;
 	let menuOpen = $state(false);
@@ -28,16 +27,15 @@
 	{/if}
 </svelte:head>
 
-<header>
+<header class="fixed top-0 w-screen bg-stone-50/85 backdrop-blur-lg z-50">
 	<div
-		class="fixed top-0 w-screen bg-white flex justify-between items-center shadow-lg site-header py-4 px-5 z-50"
+		class="flex justify-between items-end site-header py-8 px-5 mx-auto max-w-7xl"
 		style="--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.05)"
 		class:is-scrolling={scrollMode}
 	>
 		<div>
-			<a href="#start" class="flex items-end text-lg">
-				<img src={logoImage} alt="Azubi Companion Logo" class="h-16" />
-				<span class="hl-font leading-5 ms-4 brand-text">AZUBI<br />COMPANION</span>
+			<a href="#start">
+				<img src="images/ac-logo.svg" alt="Azubi Companion Logo" class="h-16 lg:h-22" />
 			</a>
 		</div>
 		<div class="xl:me-5">
@@ -45,52 +43,24 @@
 				<span class="material-symbols-outlined">menu</span>
 			</button>
 
-			<nav class="hidden xl:flex gap-8">
+			{#snippet navLink(name: string, label: string, symbol: string, color: string)}
 				<a
-					href="#programm"
-					class="nav-link rounded-md"
-					class:active={appState.currentPage === 'programm'}
-					style="--highlight-color: #7433FF"
+					href="#{name}"
+					class="nav-link"
+					class:active={appState.currentPage === name}
+					style="--highlight-color: {color}"
 				>
-					<span class="material-symbols-outlined icon"> rocket_launch </span>
-					LevelUp!
+					<span class="material-symbols-outlined text-4xl mb-3"> {symbol} </span>
+					<span class="text-2xl">{label}</span>
 				</a>
-				<a
-					href="#partner"
-					class="nav-link rounded-md"
-					class:active={appState.currentPage === 'partner'}
-					style="--highlight-color: #0d65f2"
-				>
-					<span class="material-symbols-outlined icon"> handshake </span>
-					Partner
-				</a>
-				<a
-					href="#spenden"
-					class="nav-link rounded-md"
-					class:active={appState.currentPage === 'spenden'}
-					style="--highlight-color: #FF007A"
-				>
-					<span class="material-symbols-outlined icon"> favorite </span>
-					Unterstützen
-				</a>
-				<a
-					href="#team"
-					class="nav-link rounded-md"
-					class:active={appState.currentPage === 'team'}
-					style="--highlight-color: #FFD600"
-				>
-					<span class="material-symbols-outlined icon"> group </span>
-					Team
-				</a>
-				<a
-					href="#kontakt"
-					class="nav-link rounded-md"
-					class:active={appState.currentPage === 'kontakt'}
-					style="--highlight-color: #333"
-				>
-					<span class="material-symbols-outlined icon"> mail </span>
-					Kontakt
-				</a>
+			{/snippet}
+
+			<nav class="hidden xl:flex gap-15">
+				{@render navLink('programm', 'LevelUp!', 'rocket_launch', '#7433FF')}
+				{@render navLink('partner', 'Partner', 'handshake', '#0d65f2')}
+				{@render navLink('spenden', 'Unterstützen', 'favorite', '#FF007A')}
+				{@render navLink('team', 'Team', 'group', '#FFD600')}
+				{@render navLink('kontakt', 'Kontakt', 'mail', '#333')}
 			</nav>
 		</div>
 	</div>
@@ -101,8 +71,7 @@
 		<div class="flex justify-between mb-5 pb-5 border-b border-neutral-200">
 			<div>
 				<a href="#start" class="flex items-end text-lg" onclick={() => closeMenu()}>
-					<img src={logoImage} alt="Azubi Companion Logo" class="h-16" />
-					<span class="hl-font leading-5 ms-4 brand-text">AZUBI<br />COMPANION</span>
+					<img src="images/ac-logo.svg" alt="Azubi Companion Logo" class="h-16" />
 				</a>
 			</div>
 			<button class="mobile-menu-toggle" onclick={() => closeMenu()}>
@@ -183,14 +152,10 @@
 	}
 
 	.nav-link {
-		font-family: 'Urbanist', sans-serif;
-		font-size: 1rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-weight: 500;
 		transition: transform 0.1s cubic-bezier(0.22, 1, 0.36, 1);
-		opacity: 0.75;
 	}
 
 	.nav-link.mobile {
