@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { appState } from './state';
+	import { appState } from './state.svelte';
 	import { logoImage } from '$assets/images';
 
 	let mobileMenu: HTMLDialogElement;
@@ -15,7 +15,7 @@
 		menuOpen = false;
 	}
 
-	let scrollMode = $derived($appState.scrollTop > 150);
+	let scrollMode = $derived(appState.scrollTop > 150);
 </script>
 
 <svelte:head>
@@ -49,7 +49,7 @@
 				<a
 					href="#programm"
 					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'programm'}
+					class:active={appState.currentPage === 'programm'}
 					style="--highlight-color: #7433FF"
 				>
 					<span class="material-symbols-outlined icon"> rocket_launch </span>
@@ -58,7 +58,7 @@
 				<a
 					href="#partner"
 					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'partner'}
+					class:active={appState.currentPage === 'partner'}
 					style="--highlight-color: #0d65f2"
 				>
 					<span class="material-symbols-outlined icon"> handshake </span>
@@ -67,7 +67,7 @@
 				<a
 					href="#spenden"
 					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'spenden'}
+					class:active={appState.currentPage === 'spenden'}
 					style="--highlight-color: #FF007A"
 				>
 					<span class="material-symbols-outlined icon"> favorite </span>
@@ -76,7 +76,7 @@
 				<a
 					href="#team"
 					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'team'}
+					class:active={appState.currentPage === 'team'}
 					style="--highlight-color: #FFD600"
 				>
 					<span class="material-symbols-outlined icon"> group </span>
@@ -85,7 +85,7 @@
 				<a
 					href="#kontakt"
 					class="nav-link rounded-md"
-					class:active={$appState.currentPage === 'kontakt'}
+					class:active={appState.currentPage === 'kontakt'}
 					style="--highlight-color: #333"
 				>
 					<span class="material-symbols-outlined icon"> mail </span>
@@ -114,7 +114,7 @@
 			<a
 				href="#programm"
 				class="nav-link mobile rounded-md"
-				class:active={$appState.currentPage === 'programm'}
+				class:active={appState.currentPage === 'programm'}
 				style="--highlight-color: #7433FF"
 				onclick={() => closeMenu()}
 			>
@@ -124,7 +124,7 @@
 			<a
 				href="#partner"
 				class="nav-link mobile rounded-md"
-				class:active={$appState.currentPage === 'partner'}
+				class:active={appState.currentPage === 'partner'}
 				style="--highlight-color: #0d65f2"
 				onclick={() => closeMenu()}
 			>
@@ -134,7 +134,7 @@
 			<a
 				href="#spenden"
 				class="nav-link mobile rounded-md"
-				class:active={$appState.currentPage === 'spenden'}
+				class:active={appState.currentPage === 'spenden'}
 				style="--highlight-color: #FF007A"
 				onclick={() => closeMenu()}
 			>
@@ -144,7 +144,7 @@
 			<a
 				href="#team"
 				class="nav-link mobile rounded-md"
-				class:active={$appState.currentPage === 'team'}
+				class:active={appState.currentPage === 'team'}
 				style="--highlight-color: #FFD600"
 				onclick={() => closeMenu()}
 			>
@@ -154,7 +154,7 @@
 			<a
 				href="#kontakt"
 				class="nav-link mobile rounded-md"
-				class:active={$appState.currentPage === 'kontakt'}
+				class:active={appState.currentPage === 'kontakt'}
 				style="--highlight-color: #333"
 				onclick={() => closeMenu()}
 			>
