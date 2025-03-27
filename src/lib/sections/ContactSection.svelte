@@ -3,7 +3,7 @@
 </script>
 
 <PageSection id="kontakt" class="flex items-center justify-center py-32">
-	<div>
+	<div class="container">
 		<header class="text-center">
 			<h1 class="mb-12 main-headline hl-font">Kontakt</h1>
 			<h2 class="text-xl mb-12 lead-font mx-5">

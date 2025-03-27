@@ -15,7 +15,7 @@
 </script>
 
 <PageSection id="partner" class="py-32">
-	<div class="container mx-auto px-5">
+	<div class="container">
 		<header class="text-center">
 			<h1 class="main-headline mb-12 hl-font">Partner</h1>
 			<h2 class="text-xl mb-12 lead-font">

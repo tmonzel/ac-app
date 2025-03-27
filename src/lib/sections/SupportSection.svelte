@@ -3,7 +3,7 @@
 </script>
 
 <PageSection id="spenden" class="flex items-center justify-center py-32">
-	<div class="container mx-2">
+	<div class="container">
 		<header class="text-center">
 			<h1 class="mb-12 main-headline hl-font">Unterstützen</h1>
 			<h2 class="text-xl mb-12 lead-font mx-5">

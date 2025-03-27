@@ -9,31 +9,31 @@
 	<link rel="canonical" href="https://azubi-companion.de/jobs" />
 </svelte:head>
 
-<div class="container mx-auto my-10 px-2 sm:px-0">
-	<header class="text-center">
-		<div class="flex justify-center mb-5">
+<div class="container my-10">
+	<header class="mx-auto prose lg:prose-lg">
+		<div class="flex justify-center mb-2">
 			<img src={logoImage} alt="Azubi Companion Logo" class="h-16" />
 		</div>
-		<h1 class="text-5xl font-bold mb-12 hl-font tracking-tight">
+		<h1 class="tracking-tight text-center">
 			AZUBI COMPANION (m/w/d)<br />in Hamburg gesucht
 		</h1>
-		<h2 class="text-xl mb-12 lead-font">Vollzeit (38 Stunden) oder Teilzeit</h2>
+		<p class="lead text-center">Vollzeit (38 Stunden) oder Teilzeit</p>
 	</header>
 
 	<hr class="my-10" />
 
-	<div class="px-2 sm:px-20">
-		<section class="mb-16">
+	<div class="mx-auto prose md:prose-md lg:prose-lg px-5 lg:px-0 prose-h2:mb-0">
+		<section>
 			<p>
-				Als <span class="">Azubi Companion</span> begleitest du ca. 15 junge Menschen durch die gesamte
-				Ausbildung. Du bist Vertrauensperson und unterstützt in sämtlichen Belangen:
+				Als <span class="italic font-semibold">Azubi Companion</span> begleitest du ca. 15 junge Menschen
+				durch die gesamte Ausbildung. Du bist Vertrauensperson und unterstützt in sämtlichen Belangen:
 			</p>
-			<ul class="ms-5 my-5">
-				<li class="mb-2">Berufsschulthemen</li>
-				<li class="mb-2">Behördenangelegenheiten</li>
-				<li class="mb-2">Konflikten im Betrieb und im sozialen Umfeld</li>
-				<li class="mb-2">Berichtsheft</li>
-				<li class="mb-2">Prüfungsvorbereitung und vieles mehr</li>
+			<ul>
+				<li>Berufsschulthemen</li>
+				<li>Behördenangelegenheiten</li>
+				<li>Konflikten im Betrieb und im sozialen Umfeld</li>
+				<li>Berichtsheft</li>
+				<li>Prüfungsvorbereitung und vieles mehr</li>
 			</ul>
 			<p>
 				In wöchentlichen Einzelterminen mit den Azubis löst du Probleme, arbeitest an
@@ -43,10 +43,9 @@
 				kontinuierlich aus.
 			</p>
 		</section>
-		<!--<hr class="my-12 w-10 mx-auto border-neutral-400" />-->
-		<section class="mb-16">
-			<header class="mb-5">
-				<h2 class="text-center font-bold text-3xl">Wer wir sind</h2>
+		<section>
+			<header>
+				<h2 class="text-center">Wer wir sind</h2>
 
 				<div class="flex justify-center">
 					<svg
@@ -82,9 +81,9 @@
 			</p>
 		</section>
 
-		<section class="mb-12">
-			<header class="mb-5">
-				<h2 class="text-center font-bold text-3xl">Was wir uns wünschen:</h2>
+		<section>
+			<header>
+				<h2 class="text-center">Was wir uns wünschen:</h2>
 				<div class="flex justify-center">
 					<svg
 						class="max-w-72"
@@ -106,33 +105,33 @@
 				Augenhöhe und professionell sowohl mit Azubis als auch mit Unternehmen und Partner*innen
 				kommunizieren kannst. Das bringst du außerdem mit:
 			</p>
-			<ul class="ms-5 my-5">
-				<li class="mb-2">
+			<ul>
+				<li>
 					Ausgeprägte Kommunikations- und Konfliktlösungsfähigkeiten: Du kannst Konflikte und
 					Herausforderungen direkt ansprechen und Lösungen erarbeiten.
 				</li>
-				<li class="mb-2">
+				<li>
 					Selbständige Arbeitsweise: Du kannst dich selbst organisieren und Prioritäten setzen.
 				</li>
-				<li class="mb-2">
+				<li>
 					Kenntnisse der dualen sowie der schulischen Ausbildung in Hamburg: Du kennst die Abläufe,
 					die Herausforderungen sowie den Aufbau der Berufsausbildung.
 				</li>
-				<li class="mb-2">
+				<li>
 					Erfahrung mit unserer Zielgruppe: Du hattest bereits Anknüpfungspunkte mit Azubis und
 					jungen Menschen; z.B. im Unternehmen, als Lehrkraft, Mentor*in, im Ehrenamt oder
 					Nachhilfelehrer*in.
 				</li>
-				<li class="mb-2">
+				<li>
 					Sicherheit im Umgang mit gängigen MS Office-Anwendungen: Du bist nicht nur Anwender*in
 					sondern kannst den Umgang mit PowerPoint, Word, Outlook, Teams und Excel auch an Azubis
 					vermitteln.
 				</li>
 			</ul>
 		</section>
-		<section class="mb-16">
-			<header class="mb-5">
-				<h2 class="text-center font-bold text-3xl">Du möchtest mit anpacken?</h2>
+		<section>
+			<header>
+				<h2 class="text-center">Du möchtest mit anpacken?</h2>
 				<div class="flex justify-center">
 					<svg
 						class="max-w-72"
@@ -165,9 +164,3 @@
 </div>
 
 <Footer />
-
-<style>
-	p {
-		margin-bottom: 1rem /* 16px */;
-	}
-</style>
