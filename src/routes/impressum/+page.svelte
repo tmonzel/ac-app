@@ -20,8 +20,8 @@
 			<h2 class="font-semibold mb-2">Verantwortlicher für die Datenverarbeitung ist:</h2>
 			<p class="mb-8">
 				Azubi Companion gGmbH<br />
-				Budnikowsky-Twiete 7<br />
-				22041 Hamburg<br />
+				Friesenstraße 3<br />
+				20097 Hamburg<br />
 				post@azubi-companion.de
 			</p>
 

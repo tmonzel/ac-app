@@ -8,8 +8,8 @@
 			<h1 class="mb-12 main-headline hl-font">Kontakt</h1>
 			<h2 class="text-xl mb-12 lead-font mx-5">
 				Azubi Companion gGmbH<br />
-				Budnikowsky-Twiete 7<br />
-				22041 Hamburg
+				Friesenstraße 3<br />
+				20097 Hamburg
 			</h2>
 		</header>
 

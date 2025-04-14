@@ -155,8 +155,6 @@
 				Motivationsschreiben und Lebenslauf in einer pdf-Datei an
 				<mark><a href="mailto:j.woehlke@azubi-companion.de.">j.woehlke@azubi-companion.de.</a></mark
 				>
-				Unsere Arbeits- und Besucheradresse lautet:
-				<mark>Hammerbrookstraße 94 in 20097 Hamburg</mark>.
 			</p>
 
 			<p>Wir freuen uns über alle Bewerbungen, unabhängig von Geschlecht, Herkunft oder Alter.</p>
