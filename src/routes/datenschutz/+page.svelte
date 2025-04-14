@@ -72,7 +72,7 @@
 			</h2>
 			<p class="mb-5">
 				Verantwortlicher für die Datenverarbeitung beim Besuch und der Nutzung dieser Internetseite
-				ist:<br /><br />Azubi Companion gGmbH <br />Budnikowsky-Twiete 7 <br />22041 Hamburg
+				ist:<br /><br />Azubi Companion gGmbH <br />Friesenstraße 3 <br />20097 Hamburg
 			</p>
 
 			<p>

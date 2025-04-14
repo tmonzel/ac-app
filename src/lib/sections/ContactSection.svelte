@@ -3,23 +3,19 @@
 </script>
 
 <PageSection id="kontakt" class="flex items-center justify-center py-32">
-	<div class="container">
-		<header class="text-center">
-			<h1 class="mb-12 main-headline hl-font">Kontakt</h1>
-			<h2 class="text-xl mb-12 lead-font mx-5">
+	<div class="prose xl:prose-2xl text-center">
+		<header>
+			<h1 class="text-5xl sm:text-6xl xl:text-8xl font-extrabold tracking-tighter mb-5 xl:mb-13">
+				Kontakt
+			</h1>
+			<p>
 				Azubi Companion gGmbH<br />
 				Budnikowsky-Twiete 7<br />
 				22041 Hamburg
-			</h2>
+			</p>
 		</header>
 
-		<div class="grid gap-10 text-xl text-center lead-font">
-			<dl>
-				<dt class="font-semibold">Tel:</dt>
-				<dd class="mb-5">+49 (0)178-5333416</dd>
-				<dt class="font-semibold">E-Mail:</dt>
-				<dd><a href="mailto:post@azubi-companion.de">post@azubi-companion.de</a></dd>
-			</dl>
-		</div>
+		<p><span class="font-semibold">Tel:</span><br /> +49 (0)178-5333416</p>
+		<p><span class="font-semibold">E-Mail:</span><br /> post@azubi-companion.de</p>
 	</div>
 </PageSection>

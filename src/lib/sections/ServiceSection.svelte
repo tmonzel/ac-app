@@ -6,33 +6,33 @@
 <PageSection id="programm" class="py-32">
 	<div class="container">
 		<header class="text-center">
-			<span class="material-symbols-outlined text-6xl">rocket_launch</span>
-			<h1 class="main-headline mb-12 hl-font">
+			<span class="material-symbols-outlined text-6xl xl:text-9xl">rocket_launch</span>
+			<h1 class="text-6xl xl:text-8xl font-extrabold tracking-tighter mb-5 xl:mb-13">
 				Level<br />Up!
 			</h1>
-			<h2 class="text-xl mb-16 lead-font">
+			<p class="lead text-xl xl:text-3xl mb-5 xl:mb-13">
 				Individuelle Ausbildungsbegleitung <br />
 				für Azubis und Ausbildungsbetriebe.
-			</h2>
+			</p>
 		</header>
 
-		<div class="flex flex-col xl:flex-row gap-5 mb-14">
-			<div class="lg:basis-1/4 pt-8 border-neutral-300 border-t leading-5">
-				<div class="sticky top-32">
-					<span class="text-neutral-500">Für</span>
-					<h3 class="text-3xl font-bold text-rose-500">Azubis</h3>
+		<div class="flex flex-col xl:flex-row xl:gap-5 mb-14 mx-5">
+			<div class="lg:basis-1/4 pt-8 border-neutral-300 border-t">
+				<div class="xl:sticky top-42 z-0">
+					<p class="mt-0">
+						Für<br /><span class="font-bold text-3xl xl:text-4xl underline">Azubis</span>
+					</p>
 				</div>
 			</div>
-			<div class="lg:basis-3/4 xl:pt-8 border-neutral-300 xl:border-t">
-				<div class="mb-7">
-					<h4 class="font-bold mb-2">Wir starten mit dir in deine Ausbildung</h4>
-
-					<p class="mb-4">
-						Wir geben dir Rückenwind und helfen dir gerne. Von Anfang an.<br />
-						Wir stellen einen Azubi Companion an deine Seite, der für DICH da ist und DICH vor und während
-						deiner Ausbildung unterstützt:
+			<div class="lg:basis-3/4">
+				<div class="prose xl:prose-xl xl:pt-14 border-neutral-300 xl:border-t !max-w-none">
+					<h2>Wir starten mit dir in deine Ausbildung</h2>
+					<p>
+						Wir geben dir Rückenwind und helfen dir gerne. Von Anfang an. Wir stellen einen Azubi
+						Companion an deine Seite, der für DICH da ist und DICH vor und während deiner Ausbildung
+						unterstützt:
 					</p>
-					<ul class="pl-4">
+					<ul>
 						<li>
 							Wir helfen dir beim Onboarding: Noch kein Konto, die Sozialversicherungsnummer verlegt
 							oder keine Steuer-ID? Gemeinsam bekommen wir das hin und den Personalfragebogen
@@ -53,17 +53,16 @@
 							Gesprächen.
 						</li>
 					</ul>
+
+					<h2>Gemeinsam schaffst du das</h2>
+					<ul>
+						<li>Treffe andere Azubis bei Pizzaabenden, Ausflügen oder beim gemeinsamen Kochen.</li>
+						<li>Wir haben Spaß und feiern gemeinsam.</li>
+						<li>
+							Du möchtest mehr? Lerne mit uns Excel, Finanzen, Englisch, PowerPoint und vieles mehr.
+						</li>
+					</ul>
 				</div>
-
-				<h4 class="font-bold mb-2">Gemeinsam schaffst du das</h4>
-				<ul class="list-outside pl-7 mb-5">
-					<li>Treffe andere Azubis bei Pizzaabenden, Ausflügen oder beim gemeinsamen Kochen.</li>
-					<li>Wir haben Spaß und feiern gemeinsam.</li>
-					<li>
-						Du möchtest mehr? Lerne mit uns Excel, Finanzen, Englisch, PowerPoint und vieles mehr.
-					</li>
-				</ul>
-
 				<ContactBlock />
 			</div>
 		</div>
