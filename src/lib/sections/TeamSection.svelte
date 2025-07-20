@@ -5,6 +5,7 @@
 	import juliaImage from '$assets/images/team/ac-woehlke.webp';
 	import reegImage from '$assets/images/team/ac-reeg.jpg';
 	import hoppImage from '$assets/images/team/ac-hopp.jpg';
+	import mussImage from '$assets/images/team/ac-muss.jpg';
 </script>
 
 <PageSection id="team" class="flex items-center justify-center py-32">
@@ -61,6 +62,19 @@
 					<span class="font-semibold">Chris Hopp</span><br />
 					<span class="italic">Junior Companion & Projektassistentin</span><br />
 					Mobil: 49 (0)176-80410113
+				</p>
+			</div>
+			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
+				<div class="flex justify-center mb-10">
+					<div
+						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left"
+						style="background-image: url({mussImage})"
+					></div>
+				</div>
+				<p class="text-center">
+					<span class="font-semibold">Matthias Muß</span><br />
+					<span class="italic">Companion</span><br />
+					Mobil: 49 (0)157-56444273
 				</p>
 			</div>
 			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
