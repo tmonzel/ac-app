@@ -130,7 +130,7 @@
 					</div>
 
 					<p>
-						Wir helfen auch bei der Suche nach Azubis. Wir arbeiten mit Hamburger Initiativen
+						Wir unterstützen Betriebe durch starke Netzwerke. Wir arbeiten mit Hamburger Initiativen
 						zusammen, die in der Ausbildungsvorbereitung tätig sind oder Schüler*innen bei der
 						Erreichung eines Schulabschlusses unterstützen. Gerne stellen wir Kontakt zu
 						Partnerorganisationen her und können dann die jungen Menschen nahtlos weiter in die
