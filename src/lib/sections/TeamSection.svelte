@@ -48,7 +48,7 @@
 				<p class="text-center">
 					<span class="font-semibold">Simon Reeg</span><br />
 					<span class="italic">Companion & Koordinator für Ausbildungsnetzwerke</span><br />
-					Mobil: 49 (0)176-66667414
+					Mobil: +49 (0)176-66667414
 				</p>
 			</div>
 			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
@@ -60,21 +60,62 @@
 				</div>
 				<p class="text-center">
 					<span class="font-semibold">Chris Hopp</span><br />
-					<span class="italic">Junior Companion & Projektassistentin</span><br />
-					Mobil: 49 (0)176-80410113
+					<span class="italic">Companion & Projektassistentin</span><br />
+					Mobil: +49 (0)176-80410113
 				</p>
 			</div>
 			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
 				<div class="flex justify-center mb-10">
 					<div
-						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left"
-						style="background-image: url({mussImage})"
-					></div>
+						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
+					>
+						<img
+							src={logoImage}
+							alt="Azubi Companion Logo"
+							class="absolute h-28 grayscale opacity-10 me-4"
+						/>
+					</div>
 				</div>
 				<p class="text-center">
-					<span class="font-semibold">Matthias Muß</span><br />
+					<span class="font-semibold">Marieke Bargheer</span><br />
 					<span class="italic">Companion</span><br />
-					Mobil: 49 (0)157-56444273
+					Mobil: +49 (0)1575-7342159
+				</p>
+			</div>
+			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
+				<div class="flex justify-center mb-10">
+					<div
+						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
+					>
+						<img
+							src={logoImage}
+							alt="Azubi Companion Logo"
+							class="absolute h-28 grayscale opacity-10 me-4"
+						/>
+					</div>
+				</div>
+				<p class="text-center">
+					<span class="font-semibold">Sdiqa Ehsan</span><br />
+					<span class="italic">Companion</span><br />
+					Mobil: +49 (0)1575-6444273
+				</p>
+			</div>
+			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
+				<div class="flex justify-center mb-10">
+					<div
+						class="bg-zinc-200 w-64 h-64 rounded-full bg-no-repeat bg-cover bg-left flex justify-center items-center"
+					>
+						<img
+							src={logoImage}
+							alt="Azubi Companion Logo"
+							class="absolute h-28 grayscale opacity-10 me-4"
+						/>
+					</div>
+				</div>
+				<p class="text-center">
+					<span class="font-semibold">Sonja Olejak</span><br />
+					<span class="italic">Companion & Projektleitung Stipendium</span><br />
+					Mobil: +49 (0)1575-7342165
 				</p>
 			</div>
 			<div itemscope itemtype="https://schema.org/Person" class="basis-1/3">
