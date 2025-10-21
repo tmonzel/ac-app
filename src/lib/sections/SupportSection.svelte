@@ -3,7 +3,7 @@
 </script>
 
 <PageSection id="spenden" class="flex items-center justify-center py-32">
-	<div class="container mx-2">
+	<div class="container mx-auto px-5">
 		<header class="text-center">
 			<h1 class="mb-12 main-headline hl-font">Unterstützen</h1>
 			<h2 class="text-xl mb-12 lead-font mx-5">
@@ -14,7 +14,7 @@
 		<div class="flex flex-col px-5 xl:px-0 xl:flex-row gap-5">
 			<p class="xl:basis-1/2">
 				Du möchtest unsere Arbeit unterstützen und dabei helfen, dass mehr junge Menschen
-				erfolgreich ihre Ausbildung meistern? Wir sind eine gemeinnützige Organisation und unsere
+				erfolgreich ihre Ausbildung meistern? <br>Wir sind eine gemeinnützige Organisation und unsere
 				Arbeit ist nur durch Spenden möglich. Wir freuen uns über jede Unterstützung.
 			</p>
 			<div class="xl:basis-1/2">
