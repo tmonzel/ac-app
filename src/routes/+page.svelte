@@ -10,6 +10,7 @@
 	import ServiceSection from '$lib/sections/ServiceSection.svelte';
 	import SupportSection from '$lib/sections/SupportSection.svelte';
 	import ContactSection from '$lib/sections/ContactSection.svelte';
+	import StipendiumSection from '$lib/sections/StipendiumSection.svelte';
 </script>
 
 <svelte:head>
@@ -42,6 +43,7 @@
 <PageScroller>
 	<LandingSection />
 	<ServiceSection />
+	<StipendiumSection />
 	<PartnerSection />
 	<SupportSection />
 	<TeamSection />

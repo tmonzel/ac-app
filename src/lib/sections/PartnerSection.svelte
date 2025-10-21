@@ -13,6 +13,7 @@
 	import joblingeLogo from '$assets/images/logos/joblinge-logo.jpg';
 	import jeaLogo from '$assets/images/logos/jea-logo.png';
 	import fwhLogo from '$assets/images/logos/fwh-logo.jpg';
+	import ottoWolffLogo from '$assets/images/logos/otto-wolff-stiftung-logo.webp';
 </script>
 
 <PageSection id="partner" class="py-32">
@@ -51,6 +52,10 @@
 
 			<div class="bg-zinc-100">
 				<img class="partner-logo" src={fwhLogo} alt="Friedel und Walter Hoyer Stiftung Logo" />
+			</div>
+
+			<div class="bg-zinc-100">
+				<img class="partner-logo" src={ottoWolffLogo} alt="Otto Wolff Stiftung Logo" />
 			</div>
 		</div>
 		<hr class="my-10" />

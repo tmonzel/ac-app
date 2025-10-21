@@ -30,14 +30,14 @@
 
 <header>
 	<div
-		class="fixed top-0 w-screen bg-white flex justify-between items-center shadow-lg site-header py-4 px-5 z-50"
+		class="fixed top-0 w-screen bg-white flex justify-between items-center shadow-lg site-header py-2 px-5 z-50"
 		style="--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.05)"
 		class:is-scrolling={scrollMode}
 	>
 		<div>
-			<a href="#start" class="flex items-end text-lg">
-				<img src={logoImage} alt="Azubi Companion Logo" class="h-16" />
-				<span class="hl-font leading-5 ms-4 brand-text">AZUBI<br />COMPANION</span>
+			<a href="#start" class="flex items-end text-md">
+				<img src={logoImage} alt="Azubi Companion Logo" class="h-14" />
+				<span class="hl-font leading-4 ms-4 brand-text">AZUBI<br />COMPANION</span>
 			</a>
 		</div>
 		<div class="xl:me-5">
@@ -45,10 +45,10 @@
 				<span class="material-symbols-outlined">menu</span>
 			</button>
 
-			<nav class="hidden xl:flex gap-8">
+			<nav class="hidden xl:flex gap-3">
 				<a
 					href="#programm"
-					class="nav-link rounded-md"
+					class="nav-link rounded-md px-3 py-2"
 					class:active={$appState.currentPage === 'programm'}
 					style="--highlight-color: #7433FF"
 				>
@@ -56,17 +56,26 @@
 					LevelUp!
 				</a>
 				<a
+					href="#stipendium"
+					class="nav-link rounded-md bg-indigo-50 px-3 py-2"
+					class:active={$appState.currentPage === 'stipendium'}
+					style="--highlight-color: #000000"
+				>
+					<span class="material-symbols-outlined icon">school</span>
+					Stipendium
+				</a>
+				<a
 					href="#partner"
-					class="nav-link rounded-md"
+					class="nav-link rounded-md px-3 py-2"
 					class:active={$appState.currentPage === 'partner'}
-					style="--highlight-color: #0d65f2"
+					style="--highlight-color: #366CBD"
 				>
 					<span class="material-symbols-outlined icon"> handshake </span>
 					Partner
 				</a>
 				<a
 					href="#spenden"
-					class="nav-link rounded-md"
+					class="nav-link rounded-md px-3 py-2"
 					class:active={$appState.currentPage === 'spenden'}
 					style="--highlight-color: #FF007A"
 				>
@@ -75,7 +84,7 @@
 				</a>
 				<a
 					href="#team"
-					class="nav-link rounded-md"
+					class="nav-link rounded-md px-3 py-2"
 					class:active={$appState.currentPage === 'team'}
 					style="--highlight-color: #FFD600"
 				>
@@ -84,7 +93,7 @@
 				</a>
 				<a
 					href="#kontakt"
-					class="nav-link rounded-md"
+					class="nav-link rounded-md px-3 py-2"
 					class:active={$appState.currentPage === 'kontakt'}
 					style="--highlight-color: #333"
 				>
@@ -120,6 +129,16 @@
 			>
 				<span class="material-symbols-outlined icon"> rocket_launch </span>
 				LevelUp!
+			</a>
+			<a
+				href="#stipendium"
+				class="nav-link mobile rounded-md"
+				class:active={$appState.currentPage === 'stipendium'}
+				style="--highlight-color: #000000"
+				on:click={() => closeMenu()}
+			>
+				<span class="material-symbols-outlined icon"> school </span>
+				Stipendium
 			</a>
 			<a
 				href="#partner"
@@ -184,7 +203,7 @@
 
 	.nav-link {
 		font-family: 'Urbanist', sans-serif;
-		font-size: 1rem;
+		font-size: 0.9rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -202,11 +221,11 @@
 	}
 
 	.nav-link .icon {
+		font-weight: 500;
 		transition:
 			transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
 			color 0.2s cubic-bezier(0.22, 1, 0.36, 1);
-		font-size: 1.2em;
-		margin-bottom: 0.07em;
+		font-size: 1.6em;
 	}
 
 	.nav-link.mobile .icon {
